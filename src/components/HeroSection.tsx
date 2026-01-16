@@ -65,7 +65,7 @@ export const HeroSection = () => {
           >
             <Sparkles className="w-4 h-4 text-cyan-electric" />
             <span className="text-sm font-medium text-foreground/80">
-              AI-Powered Automation
+              Automatisation Propulsée par l'IA
             </span>
           </motion.div>
 
@@ -75,9 +75,9 @@ export const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6"
           >
-            Unlock the Future of Your{" "}
-            <span className="gradient-text">Agency</span> with{" "}
-            <span className="gradient-text">Intelligent Agents</span>
+            Libérez le Futur de Votre{" "}
+            <span className="gradient-text">Agence</span> avec des{" "}
+            <span className="gradient-text">Agents Intelligents</span>
           </motion.h1>
 
           <motion.p
@@ -86,8 +86,9 @@ export const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
           >
-            We design autonomous AI agents that handle your leads, scheduling,
-            and client relations 24/7—so you can focus on what matters most.
+            Nous concevons des agents IA autonomes qui gèrent vos prospects,
+            plannings et relations clients 24h/24—pour que vous puissiez vous
+            concentrer sur l'essentiel.
           </motion.p>
 
           <motion.div
@@ -97,11 +98,11 @@ export const HeroSection = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Button variant="hero" size="xl" className="group">
-              Get a Free Audit
+              Obtenir un Audit Gratuit
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button variant="heroOutline" size="xl">
-              See How It Works
+              Découvrir Comment
             </Button>
           </motion.div>
 
@@ -113,12 +114,12 @@ export const HeroSection = () => {
             className="mt-16 pt-10 border-t border-border/50"
           >
             <p className="text-sm text-muted-foreground mb-6">
-              Trusted by forward-thinking agencies
+              Approuvé par des agences visionnaires
             </p>
             <div className="flex items-center justify-center gap-8 flex-wrap opacity-60">
-              <div className="text-xl font-display font-bold text-foreground/40">RealEstate Pro</div>
-              <div className="text-xl font-display font-bold text-foreground/40">LegalTech Inc</div>
-              <div className="text-xl font-display font-bold text-foreground/40">E-Commerce Hub</div>
+              <div className="text-xl font-display font-bold text-foreground/40">Immo Expert</div>
+              <div className="text-xl font-display font-bold text-foreground/40">JurisTech</div>
+              <div className="text-xl font-display font-bold text-foreground/40">E-Commerce Pro</div>
               <div className="text-xl font-display font-bold text-foreground/40">AgentFlow</div>
             </div>
           </motion.div>

@@ -5,41 +5,41 @@ import { Button } from "@/components/ui/button";
 const industries = [
   {
     icon: Building2,
-    title: "Real Estate",
-    tagline: "Your 24/7 Property Expert",
+    title: "Immobilier",
+    tagline: "Votre Expert Immobilier 24h/24",
     description:
-      "Automate property viewings, qualify leads instantly, and match buyers with perfect properties—all while you sleep.",
+      "Automatisez les visites, qualifiez les prospects instantanément et associez les acheteurs aux biens parfaits—même pendant votre sommeil.",
     features: [
-      "Automated viewing scheduling",
-      "Intelligent lead qualification",
-      "AI-powered property matching",
-      "24/7 client engagement",
+      "Planification automatique des visites",
+      "Qualification intelligente des prospects",
+      "Matching propriétés par IA",
+      "Engagement client 24h/24",
     ],
     featured: true,
   },
   {
     icon: Scale,
-    title: "Legal Services",
-    tagline: "Streamlined Client Intake",
+    title: "Services Juridiques",
+    tagline: "Accueil Client Optimisé",
     description:
-      "From initial consultation booking to document collection, our agents handle the tedious so you can focus on winning cases.",
+      "De la prise de rendez-vous à la collecte de documents, nos agents gèrent le fastidieux pour que vous puissiez vous concentrer sur vos dossiers.",
     features: [
-      "Smart consultation scheduling",
-      "Document request automation",
-      "Client communication handling",
+      "Planification intelligente des consultations",
+      "Automatisation des demandes de documents",
+      "Gestion des communications clients",
     ],
     featured: false,
   },
   {
     icon: ShoppingCart,
     title: "E-Commerce",
-    tagline: "Conversion-Focused Agents",
+    tagline: "Agents Orientés Conversion",
     description:
-      "Turn browsers into buyers with AI agents that answer questions, provide recommendations, and close sales 24/7.",
+      "Transformez les visiteurs en acheteurs avec des agents IA qui répondent aux questions, recommandent des produits et finalisent les ventes 24h/24.",
     features: [
-      "Product recommendations",
-      "Order status updates",
-      "Cart recovery automation",
+      "Recommandations de produits",
+      "Suivi des commandes",
+      "Récupération de paniers abandonnés",
     ],
     featured: false,
   },
@@ -60,11 +60,11 @@ export const Solutions = () => {
           className="text-center mb-16"
         >
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            Specialized <span className="gradient-text">Solutions</span>
+            Solutions <span className="gradient-text">Spécialisées</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Industry-specific AI agents designed to understand your unique challenges
-            and deliver measurable results.
+            Des agents IA spécifiques à votre secteur, conçus pour comprendre vos
+            défis uniques et délivrer des résultats mesurables.
           </p>
         </motion.div>
 
@@ -88,7 +88,7 @@ export const Solutions = () => {
                 {industry.featured && (
                   <div className="absolute top-4 right-4">
                     <span className="px-3 py-1 text-xs font-semibold rounded-full bg-cyan-electric text-sapphire">
-                      Featured
+                      En vedette
                     </span>
                   </div>
                 )}
@@ -153,7 +153,7 @@ export const Solutions = () => {
                   variant={industry.featured ? "hero" : "heroOutline"}
                   className="w-full group"
                 >
-                  Learn More
+                  En Savoir Plus
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </div>

@@ -6,8 +6,8 @@ import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Solutions", href: "#solutions" },
-  { label: "The Key", href: "#methodology" },
-  { label: "Process", href: "#process" },
+  { label: "La Clé", href: "#methodology" },
+  { label: "Processus", href: "#process" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -54,7 +54,7 @@ export const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-4">
           <Button variant="heroOutline" size="lg">
-            Get a Free Audit
+            Audit Gratuit
           </Button>
         </div>
 
@@ -92,7 +92,7 @@ export const Navbar = () => {
                 </a>
               ))}
               <Button variant="hero" size="lg" className="mt-2">
-                Get a Free Audit
+                Audit Gratuit
               </Button>
             </nav>
           </motion.div>

@@ -4,27 +4,27 @@ import { Key, Zap, Target, TrendingUp } from "lucide-react";
 const features = [
   {
     icon: Key,
-    title: "Unlock Hidden Potential",
+    title: "Libérez le Potentiel Caché",
     description:
-      "Our Key methodology identifies bottlenecks in your workflow and unlocks new pathways to efficiency that you never knew existed.",
+      "Notre méthodologie Clé identifie les goulots d'étranglement dans vos workflows et ouvre de nouvelles voies vers l'efficacité que vous ignoriez.",
   },
   {
     icon: Zap,
-    title: "Instant Activation",
+    title: "Activation Instantanée",
     description:
-      "Once deployed, your AI agents activate immediately, handling tasks around the clock without delays or downtime.",
+      "Une fois déployés, vos agents IA s'activent immédiatement, gérant les tâches 24h/24 sans délai ni interruption.",
   },
   {
     icon: Target,
-    title: "Precision Targeting",
+    title: "Ciblage Précis",
     description:
-      "Every interaction is optimized. Our agents learn and adapt to deliver personalized responses that convert leads into clients.",
+      "Chaque interaction est optimisée. Nos agents apprennent et s'adaptent pour délivrer des réponses personnalisées qui convertissent les prospects en clients.",
   },
   {
     icon: TrendingUp,
-    title: "Scalable Growth",
+    title: "Croissance Évolutive",
     description:
-      "As your business grows, your AI agents scale with you—no additional hiring, training, or management required.",
+      "À mesure que votre entreprise grandit, vos agents IA évoluent avec vous—sans embauche, formation ou gestion supplémentaire.",
   },
 ];
 
@@ -46,11 +46,11 @@ export const KeyMethodology = () => {
             <Key className="w-8 h-8 text-sapphire" />
           </div>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            The <span className="gradient-text">Key</span> Advantage
+            L'Avantage <span className="gradient-text">Clé</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Our proprietary methodology is designed to unlock maximum efficiency
-            for your agency through intelligent automation.
+            Notre méthodologie propriétaire est conçue pour libérer l'efficacité
+            maximale de votre agence grâce à l'automatisation intelligente.
           </p>
         </motion.div>
 

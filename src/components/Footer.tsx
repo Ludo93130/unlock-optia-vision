@@ -20,8 +20,8 @@ export const Footer = () => {
           >
             <img src={logo} alt="Optia Solutions" className="h-12 w-auto mb-6 brightness-0 invert" />
             <p className="text-primary-foreground/70 max-w-md mb-6">
-              Unlocking the future of business through intelligent AI automation.
-              We design autonomous agents that work 24/7 so you don't have to.
+              Libérer le futur des entreprises grâce à l'automatisation IA intelligente.
+              Nous concevons des agents autonomes qui travaillent 24h/24 pour que vous n'ayez pas à le faire.
             </p>
             <div className="flex items-center gap-4">
               <a
@@ -46,9 +46,9 @@ export const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <h4 className="font-display font-bold text-lg mb-4">Quick Links</h4>
+            <h4 className="font-display font-bold text-lg mb-4">Liens Rapides</h4>
             <ul className="space-y-3">
-              {["Solutions", "The Key", "Process", "About Us"].map((link) => (
+              {["Solutions", "La Clé", "Processus", "À Propos"].map((link) => (
                 <li key={link}>
                   <a
                     href="#"
@@ -72,17 +72,17 @@ export const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-center gap-3 text-primary-foreground/70">
                 <Mail className="w-5 h-5 text-cyan-electric" />
-                hello@optia.solutions
+                bonjour@optia.solutions
               </li>
               <li className="flex items-center gap-3 text-primary-foreground/70">
                 <Phone className="w-5 h-5 text-cyan-electric" />
-                +1 (555) 123-4567
+                +33 1 23 45 67 89
               </li>
               <li className="flex items-start gap-3 text-primary-foreground/70">
                 <MapPin className="w-5 h-5 text-cyan-electric flex-shrink-0" />
-                123 Innovation Drive,
+                123 Avenue de l'Innovation,
                 <br />
-                Tech City, TC 12345
+                75001 Paris, France
               </li>
             </ul>
           </motion.div>
@@ -91,20 +91,20 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-primary-foreground/50 text-sm">
-            © 2024 Optia Solutions. All rights reserved.
+            © 2024 Optia Solutions. Tous droits réservés.
           </p>
           <div className="flex items-center gap-6 text-sm">
             <a
               href="#"
               className="text-primary-foreground/50 hover:text-primary-foreground transition-colors"
             >
-              Privacy Policy
+              Politique de Confidentialité
             </a>
             <a
               href="#"
               className="text-primary-foreground/50 hover:text-primary-foreground transition-colors"
             >
-              Terms of Service
+              Conditions d'Utilisation
             </a>
           </div>
         </div>

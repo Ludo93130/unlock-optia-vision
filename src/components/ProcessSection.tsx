@@ -7,23 +7,23 @@ const steps = [
     number: "01",
     title: "Audit",
     description:
-      "We analyze your current workflows, identify bottlenecks, and discover opportunities for intelligent automation.",
+      "Nous analysons vos workflows actuels, identifions les goulots d'étranglement et découvrons les opportunités d'automatisation intelligente.",
     color: "from-cyan-electric to-cyan-electric/60",
   },
   {
     icon: Plug,
     number: "02",
-    title: "Integration",
+    title: "Intégration",
     description:
-      "Our team seamlessly integrates AI agents into your existing systems with zero disruption to your operations.",
+      "Notre équipe intègre les agents IA dans vos systèmes existants sans aucune perturbation de vos opérations.",
     color: "from-turquoise-mint to-turquoise-mint/60",
   },
   {
     icon: Gauge,
     number: "03",
-    title: "Optimization",
+    title: "Optimisation",
     description:
-      "Continuous monitoring and refinement ensure your AI agents evolve and improve alongside your business.",
+      "Un suivi et un affinage continus garantissent que vos agents IA évoluent et s'améliorent avec votre entreprise.",
     color: "from-cyan-electric to-turquoise-mint",
   },
 ];
@@ -43,11 +43,11 @@ export const ProcessSection = () => {
           className="text-center mb-16"
         >
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            Our <span className="gradient-text">Process</span>
+            Notre <span className="gradient-text">Processus</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A proven three-step approach that takes you from initial audit to
-            fully optimized AI automation.
+            Une approche éprouvée en trois étapes qui vous accompagne de l'audit
+            initial à l'automatisation IA entièrement optimisée.
           </p>
         </motion.div>
 
@@ -106,13 +106,13 @@ export const ProcessSection = () => {
           className="text-center mt-16"
         >
           <p className="text-muted-foreground mb-6">
-            Ready to transform your agency with AI?
+            Prêt à transformer votre agence avec l'IA ?
           </p>
           <a
             href="#contact"
             className="inline-flex items-center gap-2 text-cyan-electric font-semibold hover:gap-3 transition-all duration-300"
           >
-            Start Your Free Audit
+            Commencer Votre Audit Gratuit
             <ArrowRight className="w-4 h-4" />
           </a>
         </motion.div>

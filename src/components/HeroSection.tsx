@@ -106,23 +106,6 @@ export const HeroSection = () => {
             </Button>
           </motion.div>
 
-          {/* Trust Indicators */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="mt-16 pt-10 border-t border-border/50"
-          >
-            <p className="text-sm text-muted-foreground mb-6">
-              Approuvé par des agences visionnaires
-            </p>
-            <div className="flex items-center justify-center gap-8 flex-wrap opacity-60">
-              <div className="text-xl font-display font-bold text-foreground/40">Immo Expert</div>
-              <div className="text-xl font-display font-bold text-foreground/40">JurisTech</div>
-              <div className="text-xl font-display font-bold text-foreground/40">E-Commerce Pro</div>
-              <div className="text-xl font-display font-bold text-foreground/40">AgentFlow</div>
-            </div>
-          </motion.div>
         </div>
       </div>
     </section>

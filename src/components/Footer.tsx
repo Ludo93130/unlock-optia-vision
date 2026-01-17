@@ -4,7 +4,7 @@ import logo from "@/assets/logo.png";
 
 export const Footer = () => {
   return (
-    <footer id="contact" className="bg-sapphire text-primary-foreground py-16 relative overflow-hidden">
+    <footer className="bg-sapphire text-primary-foreground py-16 relative overflow-hidden">
       {/* Decorative gradient */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[200px] bg-gradient-to-b from-cyan-electric/10 to-transparent rounded-full blur-3xl" />
 

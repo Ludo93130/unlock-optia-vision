@@ -2,6 +2,13 @@ import { motion } from "framer-motion";
 import { Building2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+const roiStats = [
+  { value: "+40%", label: "de prospects qualifiés" },
+  { value: "-60%", label: "de temps sur les tâches répétitives" },
+  { value: "24/7", label: "disponibilité client" },
+  { value: "+25%", label: "de mandats signés" },
+];
+
 const industries = [
   {
     icon: Building2,
@@ -40,6 +47,31 @@ export const Solutions = () => {
             Des agents IA spécifiques à votre secteur, conçus pour comprendre vos
             défis uniques et délivrer des résultats mesurables.
           </p>
+        </motion.div>
+
+        {/* ROI Stats Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 max-w-4xl mx-auto"
+        >
+          {roiStats.map((stat, index) => (
+            <motion.div
+              key={stat.label}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.1 * index }}
+              className="glass-card p-6 text-center rounded-2xl hover:shadow-lg transition-all duration-300"
+            >
+              <div className="font-display text-3xl md:text-4xl font-bold gradient-text mb-2">
+                {stat.value}
+              </div>
+              <p className="text-sm text-muted-foreground">{stat.label}</p>
+            </motion.div>
+          ))}
         </motion.div>
 
         <div className="max-w-xl mx-auto">

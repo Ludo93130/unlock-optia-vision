@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Building2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const roiStats = [
   { value: "+40%", label: "de prospects qualifiés" },
@@ -155,13 +156,15 @@ export const Solutions = () => {
                   ))}
                 </ul>
 
-                <Button
-                  variant={industry.featured ? "hero" : "heroOutline"}
-                  className="w-full group"
-                >
-                  En Savoir Plus
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
+                <Link to="/immobilier" className="block w-full">
+                  <Button
+                    variant={industry.featured ? "hero" : "heroOutline"}
+                    className="w-full group"
+                  >
+                    En Savoir Plus
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </Link>
               </div>
             </motion.div>
           ))}

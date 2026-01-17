@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Building2, Scale, ShoppingCart, ArrowRight } from "lucide-react";
+import { Building2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const industries = [
@@ -16,32 +16,6 @@ const industries = [
       "Engagement client 24h/24",
     ],
     featured: true,
-  },
-  {
-    icon: Scale,
-    title: "Services Juridiques",
-    tagline: "Accueil Client Optimisé",
-    description:
-      "De la prise de rendez-vous à la collecte de documents, nos agents gèrent le fastidieux pour que vous puissiez vous concentrer sur vos dossiers.",
-    features: [
-      "Planification intelligente des consultations",
-      "Automatisation des demandes de documents",
-      "Gestion des communications clients",
-    ],
-    featured: false,
-  },
-  {
-    icon: ShoppingCart,
-    title: "E-Commerce",
-    tagline: "Agents Orientés Conversion",
-    description:
-      "Transformez les visiteurs en acheteurs avec des agents IA qui répondent aux questions, recommandent des produits et finalisent les ventes 24h/24.",
-    features: [
-      "Recommandations de produits",
-      "Suivi des commandes",
-      "Récupération de paniers abandonnés",
-    ],
-    featured: false,
   },
 ];
 
@@ -68,7 +42,7 @@ export const Solutions = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="max-w-xl mx-auto">
           {industries.map((industry, index) => (
             <motion.div
               key={industry.title}

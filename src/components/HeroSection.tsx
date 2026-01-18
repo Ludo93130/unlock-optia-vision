@@ -97,11 +97,20 @@ export const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Button variant="hero" size="xl" className="group">
+            <Button 
+              variant="hero" 
+              size="xl" 
+              className="group"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Obtenir un Audit Gratuit
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button variant="heroOutline" size="xl">
+            <Button 
+              variant="heroOutline" 
+              size="xl"
+              onClick={() => document.getElementById('solutions')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Découvrir Comment
             </Button>
           </motion.div>

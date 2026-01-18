@@ -53,7 +53,11 @@ export const Navbar = () => {
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          <Button variant="heroOutline" size="lg">
+          <Button 
+            variant="heroOutline" 
+            size="lg"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Audit Gratuit
           </Button>
         </div>
@@ -91,7 +95,15 @@ export const Navbar = () => {
                   {link.label}
                 </a>
               ))}
-              <Button variant="hero" size="lg" className="mt-2">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="mt-2"
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 Audit Gratuit
               </Button>
             </nav>

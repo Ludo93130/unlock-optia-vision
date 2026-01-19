@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 
 export const HeroSection = () => {
+  const navigate = useNavigate();
+  
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Animated Background Orbs */}
@@ -109,7 +112,7 @@ export const HeroSection = () => {
             <Button 
               variant="heroOutline" 
               size="xl"
-              onClick={() => document.getElementById('solutions')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => navigate('/process')}
             >
               Découvrir Comment
             </Button>

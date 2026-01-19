@@ -92,12 +92,64 @@ export const ContactSection = () => {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {/* Contact Form */}
+          {/* Book a Call - Now first */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            className="flex flex-col"
+          >
+            <div className="glass-card rounded-2xl p-8 flex-1 flex flex-col">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-turquoise-mint to-cyan-electric flex items-center justify-center">
+                  <Calendar className="w-6 h-6 text-sapphire" />
+                </div>
+                <div>
+                  <h3 className="font-display text-xl font-bold">Réservez un appel gratuit</h3>
+                  <p className="text-sm text-muted-foreground">30 min avec un expert IA</p>
+                </div>
+              </div>
+
+              <p className="text-muted-foreground mb-6">
+                Discutons de vos besoins spécifiques et découvrez comment nos agents IA
+                peuvent transformer votre agence immobilière. Sans engagement.
+              </p>
+
+              <ul className="space-y-3 mb-8 flex-1">
+                {[
+                  "Analyse de vos processus actuels",
+                  "Identification des opportunités d'automatisation",
+                  "Estimation du ROI personnalisée",
+                  "Démonstration de nos solutions",
+                ].map((item) => (
+                  <li key={item} className="flex items-center gap-3 text-sm text-muted-foreground">
+                    <div className="w-1.5 h-1.5 rounded-full bg-cyan-electric" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+
+              <a
+                href="https://app.cal.eu/optia-solutions"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Button variant="hero" size="lg" className="w-full group">
+                  Réserver mon audit gratuit
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
+            </div>
+          </motion.div>
+
+          {/* Contact Form - Now second */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
           >
             <div className="glass-card rounded-2xl p-8">
               <div className="flex items-center gap-3 mb-6">
@@ -167,58 +219,6 @@ export const ContactSection = () => {
                   )}
                 </Button>
               </form>
-            </div>
-          </motion.div>
-
-          {/* Book a Call */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="flex flex-col"
-          >
-            <div className="glass-card rounded-2xl p-8 flex-1 flex flex-col">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-turquoise-mint to-cyan-electric flex items-center justify-center">
-                  <Calendar className="w-6 h-6 text-sapphire" />
-                </div>
-                <div>
-                  <h3 className="font-display text-xl font-bold">Réservez un appel gratuit</h3>
-                  <p className="text-sm text-muted-foreground">30 min avec un expert IA</p>
-                </div>
-              </div>
-
-              <p className="text-muted-foreground mb-6">
-                Discutons de vos besoins spécifiques et découvrez comment nos agents IA
-                peuvent transformer votre agence immobilière. Sans engagement.
-              </p>
-
-              <ul className="space-y-3 mb-8 flex-1">
-                {[
-                  "Analyse de vos processus actuels",
-                  "Identification des opportunités d'automatisation",
-                  "Estimation du ROI personnalisée",
-                  "Démonstration de nos solutions",
-                ].map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-sm text-muted-foreground">
-                    <div className="w-1.5 h-1.5 rounded-full bg-cyan-electric" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-
-              <a
-                href="https://cal.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
-              >
-                <Button variant="hero" size="lg" className="w-full group">
-                  Réserver un appel
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </a>
             </div>
           </motion.div>
         </div>

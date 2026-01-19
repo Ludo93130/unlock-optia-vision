@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
@@ -7,13 +8,15 @@ import logo from "@/assets/logo.png";
 const navLinks = [
   { label: "Solutions", href: "#solutions" },
   { label: "La Clé", href: "#methodology" },
-  { label: "Processus", href: "#process" },
+  { label: "Notre Process", href: "/process", isPage: true },
   { label: "Contact", href: "#contact" },
 ];
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +25,32 @@ export const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleNavClick = (link: typeof navLinks[0]) => {
+    if (link.isPage) {
+      navigate(link.href);
+    } else {
+      if (location.pathname !== '/') {
+        navigate('/');
+        setTimeout(() => {
+          document.querySelector(link.href)?.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      } else {
+        document.querySelector(link.href)?.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
+  const handleAuditClick = () => {
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    } else {
+      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <motion.header
@@ -35,20 +64,20 @@ export const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-3">
+        <a href="/" onClick={(e) => { e.preventDefault(); navigate('/'); }} className="flex items-center gap-3 cursor-pointer">
           <img src={logo} alt="Optia Solutions" className="h-14 w-auto" />
         </a>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
+            <button
               key={link.label}
-              href={link.href}
+              onClick={() => handleNavClick(link)}
               className="text-foreground/80 hover:text-cyan-electric transition-colors duration-300 font-medium"
             >
               {link.label}
-            </a>
+            </button>
           ))}
         </nav>
 
@@ -56,7 +85,7 @@ export const Navbar = () => {
           <Button 
             variant="heroOutline" 
             size="lg"
-            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={handleAuditClick}
           >
             Audit Gratuit
           </Button>
@@ -86,14 +115,16 @@ export const Navbar = () => {
           >
             <nav className="flex flex-col p-4 gap-4">
               {navLinks.map((link) => (
-                <a
+                <button
                   key={link.label}
-                  href={link.href}
-                  className="text-foreground/80 hover:text-cyan-electric transition-colors duration-300 font-medium py-2"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    handleNavClick(link);
+                  }}
+                  className="text-foreground/80 hover:text-cyan-electric transition-colors duration-300 font-medium py-2 text-left"
                 >
                   {link.label}
-                </a>
+                </button>
               ))}
               <Button 
                 variant="hero" 
@@ -101,7 +132,7 @@ export const Navbar = () => {
                 className="mt-2"
                 onClick={() => {
                   setIsMobileMenuOpen(false);
-                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                  handleAuditClick();
                 }}
               >
                 Audit Gratuit

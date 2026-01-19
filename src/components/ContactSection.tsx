@@ -208,30 +208,17 @@ export const ContactSection = () => {
                 ))}
               </ul>
 
-              <div className="space-y-3">
-                <a
-                  href="https://calendly.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block"
-                >
-                  <Button variant="heroOutline" size="lg" className="w-full group">
-                    Réserver via Calendly
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </a>
-                <a
-                  href="https://cal.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block"
-                >
-                  <Button variant="glass" size="lg" className="w-full group">
-                    Réserver via Cal.com
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </a>
-              </div>
+              <a
+                href="https://cal.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Button variant="hero" size="lg" className="w-full group">
+                  Réserver un appel
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
             </div>
           </motion.div>
         </div>

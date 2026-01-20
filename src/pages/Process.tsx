@@ -322,6 +322,81 @@ const Process = () => {
         </div>
       </section>
 
+      {/* Compatible CRM Section */}
+      <section className="py-24 relative">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+              Compatible avec <span className="gradient-text">vos outils</span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Nos agents IA s'intègrent nativement avec les principaux logiciels immobiliers du marché via leurs APIs.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="glass-card rounded-2xl p-8 md:p-12 max-w-5xl mx-auto"
+          >
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
+              {[
+                { name: "Apimo", description: "API REST complète" },
+                { name: "Hektor", description: "La Boîte Immo" },
+                { name: "Netty", description: "API universelle" },
+                { name: "Périclès", description: "Poliris" },
+                { name: "AC3", description: "Immo-Facile" },
+              ].map((crm, index) => (
+                <motion.div
+                  key={crm.name}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  className="flex flex-col items-center text-center p-4 rounded-xl hover:bg-muted/50 transition-colors"
+                >
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-cyan-electric/20 to-turquoise-mint/20 flex items-center justify-center mb-3 border border-cyan-electric/30">
+                    <span className="font-display font-bold text-xl text-cyan-electric">
+                      {crm.name.substring(0, 2).toUpperCase()}
+                    </span>
+                  </div>
+                  <h3 className="font-semibold text-foreground">{crm.name}</h3>
+                  <p className="text-xs text-muted-foreground">{crm.description}</p>
+                </motion.div>
+              ))}
+            </div>
+
+            <div className="mt-10 pt-8 border-t border-border/50">
+              <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-cyan-electric" />
+                  <span>Synchronisation bidirectionnelle</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-cyan-electric" />
+                  <span>Webhooks en temps réel</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-cyan-electric" />
+                  <span>APIs REST sécurisées</span>
+                </div>
+              </div>
+              <p className="text-center text-sm text-muted-foreground mt-6">
+                Vous utilisez un autre CRM ? <span className="text-cyan-electric">Contactez-nous</span> pour vérifier la compatibilité.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Global Results */}
       <section className="py-24 relative">
         <div className="container mx-auto px-4">

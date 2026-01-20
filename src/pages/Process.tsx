@@ -1,20 +1,20 @@
 import { motion } from "framer-motion";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { ContactSection } from "@/components/ContactSection";
 import { Button } from "@/components/ui/button";
 import { 
   ArrowRight, 
   CheckCircle2, 
   Clock, 
-  TrendingUp, 
-  Users, 
-  Zap,
-  MessageSquare,
   FileSearch,
   Calendar,
   BarChart3,
   Target,
-  Rocket
+  Rocket,
+  Zap,
+  MessageSquare,
+  Users
 } from "lucide-react";
 
 const processSteps = [
@@ -362,45 +362,8 @@ const Process = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-b from-muted/30 to-background relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-radial from-cyan-electric/5 via-transparent to-transparent" />
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="glass-card rounded-3xl p-12 max-w-4xl mx-auto text-center"
-          >
-            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-electric to-turquoise-mint flex items-center justify-center mx-auto mb-6">
-              <TrendingUp className="w-8 h-8 text-sapphire" />
-            </div>
-            
-            <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
-              Prêt à <span className="gradient-text">booster</span> votre agence ?
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Réservez votre audit gratuit de 30 minutes et découvrez comment nos agents IA 
-              peuvent transformer votre agence immobilière.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href="https://app.cal.eu/optia-solutions" target="_blank" rel="noopener noreferrer">
-                <Button variant="hero" size="xl" className="group">
-                  Réserver mon audit gratuit
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </a>
-            </div>
-            
-            <p className="text-sm text-muted-foreground mt-6">
-              ✓ 100% gratuit · ✓ Sans engagement · ✓ Résultats garantis
-            </p>
-          </motion.div>
-        </div>
-      </section>
+      {/* Contact Section */}
+      <ContactSection />
 
       <Footer />
     </div>

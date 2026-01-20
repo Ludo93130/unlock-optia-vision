@@ -91,15 +91,15 @@ const faqCategories = [
     questions: [
       {
         question: "Comment fonctionne la tarification ?",
-        answer: "Nous proposons des formules mensuelles adaptées à votre volume d'activité. Chaque formule inclut l'intégration, la formation, le support et les mises à jour. Contactez-nous pour un devis personnalisé basé sur vos besoins spécifiques."
+        answer: "Nous proposons un forfait unique à l'installation, compris entre 2 000 € et 3 000 € selon la complexité de votre projet et vos besoins spécifiques. Ce forfait inclut l'audit, l'intégration complète, la configuration personnalisée et la formation de votre équipe."
       },
       {
-        question: "Y a-t-il des frais cachés ?",
-        answer: "Non, nous sommes totalement transparents. Le tarif mensuel couvre tout : hébergement, maintenance, support, mises à jour. Les seuls coûts additionnels possibles sont pour des développements sur-mesure que vous pourriez demander."
+        question: "Y a-t-il des frais récurrents ?",
+        answer: "Oui, nous proposons un forfait de maintenance mensuelle représentant 10 % à 15 % du coût d'installation. Ce forfait couvre l'hébergement, les mises à jour, le support technique prioritaire et l'optimisation continue de votre agent IA."
       },
       {
         question: "Puis-je essayer avant de m'engager ?",
-        answer: "Nous proposons un audit gratuit de 30 minutes pour analyser vos besoins et vous montrer concrètement comment notre solution peut vous aider. Ensuite, nous pouvons convenir d'une période de test sur un périmètre limité."
+        answer: "Nous proposons un audit gratuit de 30 minutes pour analyser vos besoins et vous montrer concrètement comment notre solution peut vous aider. Cet audit vous permettra d'obtenir un devis précis et personnalisé."
       }
     ]
   },
@@ -109,7 +109,7 @@ const faqCategories = [
     questions: [
       {
         question: "Mes données sont-elles sécurisées ?",
-        answer: "Absolument. Nous utilisons un chiffrement de bout en bout, des serveurs sécurisés en Europe, et sommes conformes au RGPD. Vos données et celles de vos clients sont protégées selon les standards les plus stricts du marché."
+        answer: "Absolument. Nous utilisons un chiffrement de bout en bout et nos serveurs sont hébergés chez OVH, en France. Vos données et celles de vos clients sont protégées selon les standards les plus stricts du marché et restent sur le territoire français."
       },
       {
         question: "Qui a accès aux conversations ?",
@@ -117,7 +117,7 @@ const faqCategories = [
       },
       {
         question: "Comment gérez-vous le RGPD ?",
-        answer: "Nous sommes 100% conformes au RGPD. Les données sont hébergées en Europe, le consentement est recueilli, et vos prospects peuvent exercer leurs droits (accès, rectification, suppression) à tout moment. Nous vous accompagnons sur tous les aspects légaux."
+        answer: "Nous sommes 100% conformes au RGPD. Les données sont hébergées en France chez OVH, le consentement est recueilli, et vos prospects peuvent exercer leurs droits (accès, rectification, suppression) à tout moment. Nous vous accompagnons sur tous les aspects légaux."
       }
     ]
   }

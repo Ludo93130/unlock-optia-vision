@@ -9,8 +9,8 @@ const navLinks = [
   { label: "Solutions", href: "#solutions" },
   { label: "La Clé", href: "#methodology" },
   { label: "Notre Process", href: "/process", isPage: true },
-  { label: "FAQ", href: "/faq", isPage: true },
   { label: "Contact", href: "#contact" },
+  { label: "FAQ", href: "/faq", isPage: true },
 ];
 
 export const Navbar = () => {

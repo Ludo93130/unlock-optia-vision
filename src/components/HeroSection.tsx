@@ -68,7 +68,7 @@ export const HeroSection = () => {
           >
             <Sparkles className="w-4 h-4 text-cyan-electric" />
             <span className="text-sm font-medium text-foreground/80">
-              Automatisation Propulsée par l'IA
+              Spécialiste IA pour Agences Immobilières
             </span>
           </motion.div>
 
@@ -78,20 +78,28 @@ export const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6"
           >
-            Libérez le Futur de Votre{" "}
-            <span className="gradient-text">Agence</span> avec des{" "}
-            <span className="gradient-text">Agents Intelligents</span>
+            Boostez la Rentabilité de Votre{" "}
+            <span className="gradient-text">Agence Immobilière</span> grâce à l'
+            <span className="gradient-text">IA</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
+            className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-4"
+          >
+            <span className="font-semibold text-foreground">Chaque minute compte. Chaque lead aussi.</span>
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.25 }}
             className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
           >
-            Nous concevons des agents IA autonomes qui gèrent vos prospects,
-            plannings et relations clients 24h/24—pour que vous puissiez vous
-            concentrer sur l'essentiel.
+            Nos agents IA autonomes qualifient vos prospects, gèrent vos plannings
+            et relancent vos clients 24h/24—pour maximiser vos mandats et votre chiffre d'affaires.
           </motion.p>
 
           <motion.div

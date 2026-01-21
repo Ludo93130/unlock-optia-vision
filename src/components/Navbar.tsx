@@ -66,7 +66,7 @@ export const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a href="/" onClick={(e) => { e.preventDefault(); navigate('/'); }} className="flex items-center gap-3 cursor-pointer">
-          <img src={logo} alt="Optia Solutions" className="h-14 w-auto" />
+          <img src={logo} alt="Optia Solutions" className="h-16 w-auto" />
         </a>
 
         {/* Desktop Navigation */}

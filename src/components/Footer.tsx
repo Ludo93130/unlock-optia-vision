@@ -18,7 +18,7 @@ export const Footer = () => {
             transition={{ duration: 0.5 }}
             className="md:col-span-2"
           >
-            <img src={logo} alt="Optia Solutions" className="h-12 w-auto mb-6 brightness-0 invert" />
+            <img src={logo} alt="Optia Solutions" className="h-14 w-auto mb-6 brightness-0 invert" />
             <p className="text-primary-foreground/70 max-w-md mb-6">
               Libérer le futur des entreprises grâce à l'automatisation IA intelligente.
               Nous concevons des agents autonomes qui travaillent 24h/24 pour que vous n'ayez pas à le faire.

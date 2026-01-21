@@ -96,11 +96,32 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.25 }}
-            className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
+            className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto mb-6"
           >
-            Nos agents IA autonomes qualifient vos prospects, gèrent vos plannings
-            et relancent vos clients 24h/24—pour maximiser vos mandats et votre chiffre d'affaires.
+            Nous analysons en profondeur le quotidien et les process de votre agence
+            pour identifier les freins à votre rentabilité. Puis nous déployons des
+            agents IA sur-mesure, disponibles <span className="font-semibold text-foreground">24h/24, 7j/7</span>.
           </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="flex flex-wrap items-center justify-center gap-4 mb-10"
+          >
+            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-electric/10 border border-cyan-electric/30">
+              <span className="text-cyan-electric font-bold">+40%</span>
+              <span className="text-sm text-muted-foreground">de leads qualifiés</span>
+            </div>
+            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-turquoise-mint/10 border border-turquoise-mint/30">
+              <span className="text-turquoise-mint font-bold">15h</span>
+              <span className="text-sm text-muted-foreground">gagnées / semaine</span>
+            </div>
+            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-electric/10 border border-cyan-electric/30">
+              <span className="text-cyan-electric font-bold">0</span>
+              <span className="text-sm text-muted-foreground">lead oublié</span>
+            </div>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}

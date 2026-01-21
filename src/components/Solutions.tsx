@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Building2, ArrowRight } from "lucide-react";
+import { Building2, ArrowRight, MessageSquare, Calendar, UserCheck, Home, Phone, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -8,6 +8,51 @@ const roiStats = [
   { value: "-60%", label: "de temps sur les tâches répétitives" },
   { value: "24/7", label: "disponibilité client" },
   { value: "+25%", label: "de mandats signés" },
+];
+
+const aiAgentExamples = [
+  {
+    icon: MessageSquare,
+    name: "Agent Qualification",
+    description: "Qualifie automatiquement chaque lead entrant selon vos critères (budget, secteur, délai d'achat)",
+    roi: "+35% de leads qualifiés",
+    roiColor: "text-cyan-electric",
+  },
+  {
+    icon: Calendar,
+    name: "Agent Planning",
+    description: "Gère les demandes de visites, coordonne les agendas et envoie les rappels automatiquement",
+    roi: "10h gagnées / semaine",
+    roiColor: "text-turquoise-mint",
+  },
+  {
+    icon: Phone,
+    name: "Agent Relance",
+    description: "Relance intelligemment les prospects inactifs par SMS, email ou WhatsApp au bon moment",
+    roi: "0 lead oublié",
+    roiColor: "text-cyan-electric",
+  },
+  {
+    icon: Home,
+    name: "Agent Matching",
+    description: "Associe automatiquement les acheteurs aux biens correspondant à leurs critères",
+    roi: "+20% de mandats",
+    roiColor: "text-turquoise-mint",
+  },
+  {
+    icon: UserCheck,
+    name: "Agent Suivi Client",
+    description: "Maintient le contact avec vos anciens clients pour générer des recommandations",
+    roi: "+15% de parrainage",
+    roiColor: "text-cyan-electric",
+  },
+  {
+    icon: FileText,
+    name: "Agent Reporting",
+    description: "Génère des rapports hebdomadaires sur vos performances et vos opportunités",
+    roi: "Vision 360° en temps réel",
+    roiColor: "text-turquoise-mint",
+  },
 ];
 
 const industries = [
@@ -48,6 +93,45 @@ export const Solutions = () => {
             Des agents IA spécifiques à votre secteur, conçus pour comprendre vos
             défis uniques et délivrer des résultats mesurables.
           </p>
+        </motion.div>
+
+        {/* AI Agent Examples Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="mb-16"
+        >
+          <h3 className="font-display text-xl sm:text-2xl font-semibold text-center mb-8">
+            Exemples d'<span className="gradient-text">Agents IA</span> pour votre agence
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {aiAgentExamples.map((agent, index) => (
+              <motion.div
+                key={agent.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: 0.05 * index }}
+                whileHover={{ y: -4, transition: { duration: 0.2 } }}
+                className="glass-card p-6 rounded-2xl hover:shadow-lg transition-all duration-300 group"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-electric/20 to-turquoise-mint/20 flex items-center justify-center flex-shrink-0 group-hover:from-cyan-electric/30 group-hover:to-turquoise-mint/30 transition-all">
+                    <agent.icon className="w-6 h-6 text-cyan-electric" />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-foreground mb-1">{agent.name}</h4>
+                    <p className="text-sm text-muted-foreground mb-3">{agent.description}</p>
+                    <div className={`inline-flex items-center px-3 py-1 rounded-full bg-background/50 border border-current/20 text-sm font-semibold ${agent.roiColor}`}>
+                      {agent.roi}
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
 
         {/* ROI Stats Section */}

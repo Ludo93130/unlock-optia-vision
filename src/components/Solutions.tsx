@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Building2, ArrowRight, MessageSquare, Calendar, UserCheck, Home, Phone, FileText } from "lucide-react";
+import { Building2, ArrowRight, MessageSquare, Calendar, Home, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -12,45 +12,31 @@ const roiStats = [
 
 const aiAgentExamples = [
   {
-    icon: MessageSquare,
-    name: "Agent Qualification",
-    description: "Qualifie automatiquement chaque lead entrant selon vos critères (budget, secteur, délai d'achat)",
-    roi: "+35% de leads qualifiés",
+    icon: Phone,
+    name: "Agent Vocal 24/7",
+    description: "Répond aux appels entrants jour et nuit, qualifie les prospects en temps réel, prend les rendez-vous et transfère les urgences à vos équipes. Voix naturelle et personnalisée à l'image de votre agence.",
+    roi: "0 appel manqué • +50% de RDV",
     roiColor: "text-cyan-electric",
   },
   {
-    icon: Calendar,
-    name: "Agent Planning",
-    description: "Gère les demandes de visites, coordonne les agendas et envoie les rappels automatiquement",
-    roi: "10h gagnées / semaine",
+    icon: MessageSquare,
+    name: "Agent Qualification & Relance",
+    description: "Qualifie automatiquement chaque lead selon vos critères (budget, secteur, délai). Relance intelligemment par SMS, email ou WhatsApp au moment optimal pour maximiser les conversions.",
+    roi: "+35% de leads qualifiés",
     roiColor: "text-turquoise-mint",
   },
   {
-    icon: Phone,
-    name: "Agent Relance",
-    description: "Relance intelligemment les prospects inactifs par SMS, email ou WhatsApp au bon moment",
-    roi: "0 lead oublié",
+    icon: Calendar,
+    name: "Agent Planning & Visites",
+    description: "Gère les demandes de visites, coordonne les agendas de vos agents, envoie les rappels automatiques et optimise les tournées pour gagner du temps sur le terrain.",
+    roi: "10h gagnées / semaine",
     roiColor: "text-cyan-electric",
   },
   {
     icon: Home,
-    name: "Agent Matching",
-    description: "Associe automatiquement les acheteurs aux biens correspondant à leurs critères",
-    roi: "+20% de mandats",
-    roiColor: "text-turquoise-mint",
-  },
-  {
-    icon: UserCheck,
-    name: "Agent Suivi Client",
-    description: "Maintient le contact avec vos anciens clients pour générer des recommandations",
-    roi: "+15% de parrainage",
-    roiColor: "text-cyan-electric",
-  },
-  {
-    icon: FileText,
-    name: "Agent Reporting",
-    description: "Génère des rapports hebdomadaires sur vos performances et vos opportunités",
-    roi: "Vision 360° en temps réel",
+    name: "Agent Matching & Suivi",
+    description: "Associe automatiquement les acheteurs aux biens correspondant à leurs critères. Maintient le contact avec vos anciens clients pour générer des recommandations et fidéliser.",
+    roi: "+25% de mandats signés",
     roiColor: "text-turquoise-mint",
   },
 ];

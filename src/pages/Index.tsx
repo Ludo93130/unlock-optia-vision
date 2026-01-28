@@ -6,6 +6,7 @@ import { ProcessSection } from "@/components/ProcessSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { Chatbot } from "@/components/Chatbot";
+import { PrimaryCtas } from "@/components/PrimaryCtas";
 
 const Index = () => {
   return (
@@ -13,6 +14,11 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <Solutions />
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <PrimaryCtas />
+        </div>
+      </section>
       <KeyMethodology />
       <ProcessSection />
       <ContactSection />

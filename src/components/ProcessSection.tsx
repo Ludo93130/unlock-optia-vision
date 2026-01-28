@@ -97,25 +97,7 @@ export const ProcessSection = () => {
           ))}
         </div>
 
-        {/* CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center mt-16"
-        >
-          <p className="text-muted-foreground mb-6">
-            Prêt à transformer votre agence avec l'IA ?
-          </p>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 text-cyan-electric font-semibold hover:gap-3 transition-all duration-300"
-          >
-            Commencer Votre Audit Gratuit
-            <ArrowRight className="w-4 h-4" />
-          </a>
-        </motion.div>
+
       </div>
     </section>
   );

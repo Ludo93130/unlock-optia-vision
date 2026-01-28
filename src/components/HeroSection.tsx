@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
+import { PrimaryCtas } from "@/components/PrimaryCtas";
 
 export const HeroSection = () => {
   const navigate = useNavigate();
@@ -89,8 +89,13 @@ export const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-4"
           >
-            <span className="font-semibold text-foreground">Chaque minute compte. Chaque lead aussi.</span>
-            <span className="font-semibold text-foreground">74% des vendeurs signent avec le premier agent qui les contacte.</span>
+            <span className="font-semibold text-foreground">
+              Chaque minute compte. Chaque lead aussi.
+            </span>
+            <br />
+            <span className="font-semibold text-foreground">
+              74% des vendeurs signent avec le premier agent qui les contacte.
+            </span>
           </motion.p>
 
           <motion.p
@@ -128,24 +133,9 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="flex items-center justify-center"
           >
-            <Button 
-              variant="hero" 
-              size="xl" 
-              className="group"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              Obtenir un Audit Gratuit
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button 
-              variant="heroOutline" 
-              size="xl"
-              onClick={() => navigate('/process')}
-            >
-              Découvrir Comment
-            </Button>
+            <PrimaryCtas />
           </motion.div>
 
         </div>

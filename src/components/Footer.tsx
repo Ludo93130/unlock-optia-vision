@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, Linkedin } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 export const Footer = () => {
@@ -20,21 +20,17 @@ export const Footer = () => {
           >
             <img src={logo} alt="Optia Solutions" className="h-14 w-auto mb-6 brightness-0 invert" />
             <p className="text-primary-foreground/70 max-w-md mb-6">
-              Libérer le futur des entreprises grâce à l'automatisation IA intelligente.
+              Libérer le futur de votre agence immobilière grâce à l'automatisation IA.
               Nous concevons des agents autonomes qui travaillent 24h/24 pour que vous n'ayez pas à le faire.
             </p>
             <div className="flex items-center gap-4">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/ludovicpaget-optia-solutions"
+                target="_blank"
+                rel="noreferrer"
                 className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-cyan-electric transition-colors duration-300"
               >
                 <Linkedin className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-cyan-electric transition-colors duration-300"
-              >
-                <Twitter className="w-5 h-5" />
               </a>
             </div>
           </motion.div>
@@ -72,17 +68,11 @@ export const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-center gap-3 text-primary-foreground/70">
                 <Mail className="w-5 h-5 text-cyan-electric" />
-                bonjour@optia.solutions
+                contact@optia-solutions.fr
               </li>
               <li className="flex items-center gap-3 text-primary-foreground/70">
                 <Phone className="w-5 h-5 text-cyan-electric" />
-                +33 1 23 45 67 89
-              </li>
-              <li className="flex items-start gap-3 text-primary-foreground/70">
-                <MapPin className="w-5 h-5 text-cyan-electric flex-shrink-0" />
-                123 Avenue de l'Innovation,
-                <br />
-                75001 Paris, France
+                07 54 07 34 98
               </li>
             </ul>
           </motion.div>
@@ -91,7 +81,7 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-primary-foreground/50 text-sm">
-            © 2024 Optia Solutions. Tous droits réservés.
+            © 2026 Optia Immo Solutions. Tous droits réservés.
           </p>
           <div className="flex items-center gap-6 text-sm">
             <a

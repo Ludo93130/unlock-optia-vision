@@ -44,16 +44,38 @@ export const Footer = () => {
           >
             <h4 className="font-display font-bold text-lg mb-4">Liens Rapides</h4>
             <ul className="space-y-3">
-              {["Solutions", "La Clé", "Processus", "À Propos"].map((link) => (
-                <li key={link}>
-                  <a
-                    href="#"
-                    className="text-primary-foreground/70 hover:text-cyan-electric transition-colors duration-300"
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a
+                  href="#solutions"
+                  className="text-primary-foreground/70 hover:text-cyan-electric transition-colors duration-300"
+                >
+                  Solutions
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#methodology"
+                  className="text-primary-foreground/70 hover:text-cyan-electric transition-colors duration-300"
+                >
+                  La Clé
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/process"
+                  className="text-primary-foreground/70 hover:text-cyan-electric transition-colors duration-300"
+                >
+                  Processus
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/a-propos"
+                  className="text-primary-foreground/70 hover:text-cyan-electric transition-colors duration-300"
+                >
+                  À Propos
+                </a>
+              </li>
             </ul>
           </motion.div>
 

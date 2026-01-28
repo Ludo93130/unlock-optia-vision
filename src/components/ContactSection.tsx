@@ -107,7 +107,7 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-display text-xl font-bold">Réservez un appel gratuit</h3>
-                  <p className="text-sm text-muted-foreground">30 min avec un expert IA</p>
+                  <p className="text-sm text-muted-foreground">15 min avec un expert IA</p>
                 </div>
               </div>
 
@@ -131,7 +131,7 @@ export const ContactSection = () => {
               </ul>
 
               <a
-                href="https://app.cal.eu/optia-solutions"
+                href="https://cal.com/ludovic-paget-qepim0/15min"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"

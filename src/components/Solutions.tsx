@@ -13,31 +13,24 @@ const roiStats = [
 const aiAgentExamples = [
   {
     icon: Phone,
-    name: "Agent Vocal 24/7",
-    description: "Répond aux appels entrants jour et nuit, qualifie les prospects en temps réel, prend les rendez-vous et transfère les urgences à vos équipes. Voix naturelle et personnalisée à l'image de votre agence.",
-    roi: "0 appel manqué • +50% de RDV",
+    name: "Agent Capture 360°",
+    description: "• Capte tous vos canaux : appels, emails, SMS, WhatsApp, SeLoger, LeBonCoin\n• Qualifie chaque prospect en temps réel\n• Planifie les RDV automatiquement\n• Disponible 24h/24, 7j/7",
+    roi: "0 lead perdu • Réponse < 2 min",
     roiColor: "text-cyan-electric",
   },
   {
     icon: MessageSquare,
-    name: "Agent Qualification & Relance",
-    description: "Qualifie automatiquement chaque lead selon vos critères (budget, secteur, délai). Relance intelligemment par SMS, email ou WhatsApp au moment optimal pour maximiser les conversions.",
-    roi: "+35% de leads qualifiés",
+    name: "Agent Conversion & Relance",
+    description: "• Relance par email, SMS ou WhatsApp au bon moment\n• Réengage les leads dormants\n• Assure le suivi jusqu'à la signature\n• Personnalise chaque message",
+    roi: "+45% de conversions\n15h gagnées/sem.",
     roiColor: "text-turquoise-mint",
-  },
-  {
-    icon: Calendar,
-    name: "Agent Planning & Visites",
-    description: "Gère les demandes de visites, coordonne les agendas de vos agents, envoie les rappels automatiques et optimise les tournées pour gagner du temps sur le terrain.",
-    roi: "10h gagnées / semaine",
-    roiColor: "text-cyan-electric",
   },
   {
     icon: Home,
-    name: "Agent Matching & Suivi",
-    description: "Associe automatiquement les acheteurs aux biens correspondant à leurs critères. Maintient le contact avec vos anciens clients pour générer des recommandations et fidéliser.",
-    roi: "+25% de mandats signés",
-    roiColor: "text-turquoise-mint",
+    name: "Agent Matching & Fidélisation",
+    description: "• Matche instantanément acheteurs et biens\n• Envoie des alertes personnalisées\n• Maintient le lien avec vos anciens clients\n• Génère recommandations et nouveaux mandats",
+    roi: "+35% de mandats • +20k€/an",
+    roiColor: "text-cyan-electric",
   },
 ];
 
@@ -109,8 +102,8 @@ export const Solutions = () => {
                   </div>
                   <div className="flex-1">
                     <h4 className="font-semibold text-foreground mb-1">{agent.name}</h4>
-                    <p className="text-sm text-muted-foreground mb-3">{agent.description}</p>
-                    <div className={`inline-flex items-center px-3 py-1 rounded-full bg-background/50 border border-current/20 text-sm font-semibold ${agent.roiColor}`}>
+                    <p className="text-sm text-muted-foreground mb-3 whitespace-pre-line">{agent.description}</p>
+                    <div className={`inline-flex items-center justify-center px-3 py-1 rounded-full bg-background/50 border border-current/20 text-sm font-semibold text-center whitespace-pre-line ${agent.roiColor}`}>
                       {agent.roi}
                     </div>
                   </div>

@@ -90,6 +90,7 @@ export const HeroSection = () => {
             className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-4"
           >
             <span className="font-semibold text-foreground">Chaque minute compte. Chaque lead aussi.</span>
+            <span className="font-semibold text-foreground">74% des vendeurs signent avec le premier agent qui les contacte.</span>
           </motion.p>
 
           <motion.p

@@ -8,6 +8,8 @@ import Immobilier from "./pages/Immobilier";
 import Process from "./pages/Process";
 import FAQ from "./pages/FAQ";
 import About from "./pages/About";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +26,8 @@ const App = () => (
           <Route path="/process" element={<Process />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/a-propos" element={<About />} />
+          <Route path="/politique-de-confidentialite" element={<PrivacyPolicy />} />
+          <Route path="/conditions-utilisation" element={<TermsOfService />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -5,7 +5,7 @@ import { Solutions } from "@/components/Solutions";
 import { ProcessSection } from "@/components/ProcessSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
-import { Chatbot } from "@/components/Chatbot";
+//import { Chatbot } from "@/components/Chatbot";
 import { PrimaryCtas } from "@/components/PrimaryCtas";
 
 const Index = () => {
@@ -23,7 +23,7 @@ const Index = () => {
       <ProcessSection />
       <ContactSection />
       <Footer />
-      <Chatbot />
+      {/* <Chatbot /> */}
     </div>
   );
 };

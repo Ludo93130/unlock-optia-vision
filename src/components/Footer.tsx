@@ -5,12 +5,10 @@ import logo from "@/assets/logo.png";
 export const Footer = () => {
   return (
     <footer className="bg-sapphire text-primary-foreground py-16 relative overflow-hidden">
-      {/* Decorative gradient */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[200px] bg-gradient-to-b from-cyan-electric/10 to-transparent rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
-          {/* Brand Column */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -35,7 +33,6 @@ export const Footer = () => {
             </div>
           </motion.div>
 
-          {/* Quick Links */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -45,41 +42,28 @@ export const Footer = () => {
             <h4 className="font-display font-bold text-lg mb-4">Liens Rapides</h4>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="#solutions"
-                  className="text-primary-foreground/70 hover:text-cyan-electric transition-colors duration-300"
-                >
+                <a href="#solutions" className="text-primary-foreground/70 hover:text-cyan-electric transition-colors duration-300">
                   Solutions
                 </a>
               </li>
               <li>
-                <a
-                  href="#methodology"
-                  className="text-primary-foreground/70 hover:text-cyan-electric transition-colors duration-300"
-                >
+                <a href="#methodology" className="text-primary-foreground/70 hover:text-cyan-electric transition-colors duration-300">
                   La Clé
                 </a>
               </li>
               <li>
-                <a
-                  href="/process"
-                  className="text-primary-foreground/70 hover:text-cyan-electric transition-colors duration-300"
-                >
+                <a href="/process" className="text-primary-foreground/70 hover:text-cyan-electric transition-colors duration-300">
                   Processus
                 </a>
               </li>
               <li>
-                <a
-                  href="/a-propos"
-                  className="text-primary-foreground/70 hover:text-cyan-electric transition-colors duration-300"
-                >
-                  À Propos
+                <a href="/a-propos" className="text-primary-foreground/70 hover:text-cyan-electric transition-colors duration-300">
+                  A Propos
                 </a>
               </li>
             </ul>
           </motion.div>
 
-          {/* Contact */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -100,22 +84,15 @@ export const Footer = () => {
           </motion.div>
         </div>
 
-        {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-primary-foreground/50 text-sm">
             © 2026 Optia Immo Solutions. Tous droits réservés.
           </p>
           <div className="flex items-center gap-6 text-sm">
-            <a
-              href="#"
-              className="text-primary-foreground/50 hover:text-primary-foreground transition-colors"
-            >
+            <a href="/politique-de-confidentialite" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors">
               Politique de Confidentialité
             </a>
-            <a
-              href="#"
-              className="text-primary-foreground/50 hover:text-primary-foreground transition-colors"
-            >
+            <a href="/conditions-utilisation" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors">
               Conditions d'Utilisation
             </a>
           </div>

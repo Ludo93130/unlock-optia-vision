@@ -18,7 +18,7 @@ export const PrimaryCtas = () => {
 
       <Button variant="heroOutline" size="xl" asChild>
         <a
-          href="https://www.loom.com/share/4a593d89b8b14f3a95f755012a7d18e2"
+          href="https://www.loom.com/share/38ac27bbba3f4b7dbff727b55b6ca7a9"
           target="_blank"
           rel="noopener noreferrer"
         >
